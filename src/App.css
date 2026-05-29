@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+
+  background: #0d1117;
+  color: #f6fff6;
+}
+
+/* 전체 레이아웃 */
+.erp-layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* 사이드바 */
+.sidebar {
+  width: 220px;
+  background: #161b22;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  border-right: 1px solid #30363d;
+}
+
+.logo {
+  margin-bottom: 20px;
+  color: #7c3aed;
+}
+
+/* 메뉴 버튼 */
+.sidebar button {
+  background: transparent;
+  border: 1px solid #30363d;
+  color: #f6fff6;
+
+  padding: 10px;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.sidebar button:hover {
+  background: #21262d;
+  border-color: #7c3aed;
+}
+
+/* 메인 영역 */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 상단 헤더 */
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
+
+  border-bottom: 1px solid #30363d;
+
+  background: #0d1117;
+}
+
+/* 콘텐츠 영역 */
+.content-box {
+  padding: 20px;
+}
+
+.mail-box {
+  padding: 20px;
+  max-width: 500px;
+}
+
+.mail-box h2 {
+  margin-bottom: 20px;
+}
+
+/* input / textarea 공통 */
+.mail-box input,
+.mail-box textarea {
+  width: 100%;
+  padding: 12px;
+
+  margin-top: 6px;
+  margin-bottom: 16px;
+
+  border-radius: 8px;
+
+  background: #0d1117;
+  border: 1px solid #30363d;
+
+  color: #f6fff6;
+
+  outline: none;
+}
+
+/* 버튼 */
+.mail-box button {
+  width: 100%;
+  padding: 12px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #2563eb
+  );
+
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.mail-box button:hover {
+  transform: translateY(-2px);
+}
